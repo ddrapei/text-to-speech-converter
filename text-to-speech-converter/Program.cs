@@ -25,13 +25,13 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
         {
             Endpoint = "POST:/api/tts/convert",
             Period = "1m",
-            Limit = 10  // 2 requests per minute per IP
+            Limit = 5  // 5 requests per minute per IP
         },
         new RateLimitRule
         {
             Endpoint = "*",
             Period = "1h",
-            Limit = 100  // 10 total requests per hour per IP
+            Limit = 20  // 20 total requests per hour per IP
         }
     };
 });
