@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "text-to-speech-converter", "text-to-speech-converter\text-to-speech-converter.csproj", "{206CD5C9-B9F9-9107-0AEF-9A452FCD6BE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{206CD5C9-B9F9-9107-0AEF-9A452FCD6BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206CD5C9-B9F9-9107-0AEF-9A452FCD6BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206CD5C9-B9F9-9107-0AEF-9A452FCD6BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206CD5C9-B9F9-9107-0AEF-9A452FCD6BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6577A289-CCD7-409A-AB8A-6CDB03C3E583}
+	EndGlobalSection
+EndGlobal
