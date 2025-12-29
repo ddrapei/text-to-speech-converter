@@ -9,7 +9,7 @@ builder.Configuration.AddJsonFile("secrets.json", optional: true, reloadOnChange
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 
 // configuring server's URL
-builder.WebHost.UseUrls($"http://0.0.0.0{port}");
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 builder.Services.AddMemoryCache();
 builder.Services.Configure<IpRateLimitOptions>(options =>
@@ -25,13 +25,13 @@ builder.Services.Configure<IpRateLimitOptions>(options =>
         {
             Endpoint = "POST:/api/tts/convert",
             Period = "1m",
-            Limit = 2  // 2 requests per minute per IP
+            Limit = 10  // 2 requests per minute per IP
         },
         new RateLimitRule
         {
             Endpoint = "*",
             Period = "1h",
-            Limit = 10  // 10 total requests per hour per IP
+            Limit = 100  // 10 total requests per hour per IP
         }
     };
 });
