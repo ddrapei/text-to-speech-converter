@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "text-to-speech-converter/bin/Release/net9.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/bac34347-76cf-43bf-af2a-ecc8abe598c2/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/tts"
+}
